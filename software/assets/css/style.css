@@ -1,0 +1,306 @@
+/*------------------------------------------ CONTENT APPLIED TO MULTIPLE PAGES ------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    min-height: 100%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-color: #B2B2B2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #B2B2B2;
+}
+
+.input-field {
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.input-field input {
+    width: 75%;
+    border: 1px solid grey;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.input-field textarea {
+    width: 75%;
+    height: 200px;
+    border-radius: 10px;
+    border-color: grey;
+    resize: none;
+    min-height: 100px;
+    font-size: 15px;
+
+}
+
+footer {
+    padding-top: 2em;
+    display: flex;
+    background-color: #404040;
+    justify-content: space-around;
+
+}
+
+footer p,
+footer a {
+    color: white;
+}
+
+.allButFooter {
+    min-height: calc(100vh - 40px);
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.main-bg-color {
+    background-color: #404040;
+}
+
+.error {
+    color: red;
+    text-align: left;
+    font-size: smaller;
+    margin-top: -7px;
+}
+
+
+/*------------------------------------------ INDEX CONTENT ------------------------------------------*/
+
+#email-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 60px 50px;
+    text-align: center;
+}
+
+#email-box h1 {
+    font-size: 30px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 30px 0 50px 0;
+}
+
+.index-input {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+}
+
+.btn-field button {
+    background: #eaeaea;
+    flex-basis: 30%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: auto;
+}
+
+/*------------------------------------------ FORM CONTENT ------------------------------------------*/
+
+.form-container {
+    width: 100%;
+    margin: 1.125rem auto 0 auto;
+    padding: 1.8rem 1rem;
+}
+
+.form-top h1 {
+    font-size: 35px;
+    font-family: 'Inter';
+    margin: auto;
+}
+
+.form-top h2 {
+    font-family: 'Inter';
+    margin-top: 0;
+}
+
+.line {
+    width: 100%;
+    background-color: #b2b2b2;
+    height: 3px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.form-content p {
+    font-family: 'Inter';
+    text-align: left;
+}
+
+@media (min-width:576px) {
+    .form-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:800px) {
+    .form-container {
+        max-width: 1000px;
+    }
+}
+
+.form-box {
+    text-align: center;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.prev-page,
+.next-page {
+    width: 10%;
+    height: 4.2vh;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: 1px grey solid;
+    outline: 0;
+    cursor: pointer;
+    margin: auto;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid grey;
+}
+
+.prev-page {
+    float: left;
+}
+
+.next-page {
+    float: right;
+}
+
+.multiple-fields-Q {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.multiple-fields-Q input {
+    width: 40px;
+    margin-right: 10px;
+
+}
+
+.multiple-fields-Q div {
+    margin: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info .input-group {
+    padding: 5px;
+}
+
+
+
+
+/*------------------------------------------ style for dashboard.php ------------------------------------------*/
+.main-header {
+    padding: .5em;
+    font-style: italic;
+    font-size: 2.5em;
+
+}
+
+.theme-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*------------------------------------------ style for theme pages ------------------------------------------*/
+
+.table-formating {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-formating th,
+.table-formating td {
+    text-align: center;
+}
+
+.table-formating a {
+    color: #404040;
+}
+
+.prips-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: white;
+
+
+}
+
+
+/*----------------------------------------- style for searchBar.php --------------------------------------*/
+
+.wrapper{
+    width: 80%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
